@@ -10,6 +10,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { LiaBlogSolid } from "react-icons/lia";
 import { MdHealthAndSafety } from "react-icons/md";
 import { MdContactMail } from "react-icons/md";
+import vaayu_img from "../../assets/vaayu.png";
 
 const AdminSidebar = () => {
 	const location = useLocation();
@@ -52,7 +53,7 @@ const AdminSidebar = () => {
 				}
 			>
 				{/* <h2>Logo.</h2> */}
-				<img src="/public/vaayu.png" alt="user image" style={{ width: "100%" }} />
+				<img src={vaayu_img} alt="user image" style={{ width: "100%" }} />
 				{/* <h2>Marvin McKinny</h2> */}
 				{/* <h5>President of Sales</h5> */}
 				<DivOne location={location} />
